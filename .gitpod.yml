@@ -2,5 +2,6 @@ image:
   file: .gitpod.Dockerfile
   
 tasks:
+  - before: export VAULT_ADDR='https://cf829ef8-6868-4416-96c3-56b74fc01e50.ws-eu03.gitpod.io/:8200'
   - command: vault server -dev
   
